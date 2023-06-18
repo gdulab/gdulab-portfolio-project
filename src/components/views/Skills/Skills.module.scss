@@ -1,0 +1,26 @@
+@import '../../../styles/global.scss';
+
+.skillsWrapper {
+    height: 300px;
+    display: flex;
+
+}
+
+.skillsImage {
+    flex: 33.3333%;
+    background-image: url("../../../images/skillsImage.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px;
+
+}
+
+.skillsText {
+    flex: 66.6666%;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: $color-lightTheme;
+    box-shadow: 2px 2px 2px;
+
+}
