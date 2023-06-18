@@ -1,0 +1,89 @@
+@import '../../../styles/global.scss';
+
+.heroWrapper {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heroLeft {
+    background-color: $color-lightTheme;
+    border-radius: 20px;
+    margin: 10px;
+    flex: calc(66.666% - 20px);
+    justify-content: space-evenly;
+    position: relative;
+
+
+    .heroLeftContentWrapper {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+
+
+        p {
+            text-align: justify;
+        }
+
+
+    }
+
+    .techStack {
+        height: 30%;
+        width: 100%;
+        background-color: $color-light;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        font-size: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            margin: 10px;
+            transition: all 5s;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+    }
+}
+
+
+
+.heroRight {
+    border-radius: 20px;
+    margin: 10px;
+    flex: calc(33.333% - 20px);
+
+    .photo {
+        height: calc(85% - 20px);
+        border-radius: 20px;
+        background-image: url(/images/me.png);
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        background-color: $color-lightTheme;
+        height: 15%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        .linksWrapper {
+            
+            display: flex;
+            a {
+                display: flex;
+                img {
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
