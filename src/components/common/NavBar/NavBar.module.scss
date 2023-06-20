@@ -1,0 +1,44 @@
+@import '../../../styles/global.scss';
+
+.NavBar {
+    background-color: #2c2c34;
+    border-radius: 20px;
+    height: 80px;
+    position: relative;
+    color: $color-light;
+    margin: auto 10px;
+    display: flex;
+
+}
+
+.titleBox {
+    flex: 50%;
+    margin: auto 30px;
+
+    .title {
+        color: $color-light;
+        text-decoration: none;
+    }
+}
+
+.links {
+    text-align: right;
+    flex: 50%;
+    margin: auto 30px;
+
+    ul {
+        list-style: none;
+        margin: auto;
+
+        li {
+            display: inline;
+            margin: auto 15px;
+            .link {
+                color: $color-light;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}

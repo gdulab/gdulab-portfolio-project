@@ -2,56 +2,63 @@
 
 .heroWrapper {
     height: 500px;
-    display: flex;
     justify-content: space-evenly;
+    display: flex;
 }
 
 .heroLeft {
-    background-color: $color-lightTheme;
     border-radius: 20px;
     margin: 10px;
     flex: calc(66.666% - 20px);
-    justify-content: space-evenly;
     position: relative;
-    box-shadow: 2px 2px 2px;
-
+    max-height: 100%;
 
     .heroLeftContentWrapper {
+        position: absolute;
+        flex-direction: column;
+        width: 75%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        position: absolute;
 
-
-        p {
-            text-align: justify;
-        }
-
-
-    }
-
-    .techStack {
-        height: 30%;
-        width: 100%;
-        background-color: $color-light;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 10px;
-        font-size: 40px;
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            margin: 10px;
-            transition: all 3s;
-
-            &:hover {
-                transform: scale(1.3);
+        .heroText {
+            p {
+                text-align: justify;
             }
         }
 
+        .techStack {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: $color-light;
+            border-radius: 10px;
+            justify-content: space-evenly;
+            max-width: 70%;
+
+            img {
+                object-fit: contain;
+                max-height: 80%;
+                max-width: 15%;
+                margin: 10px;
+                transition: all 1s;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+
+
     }
+
+
 }
 
 
@@ -66,24 +73,33 @@
         border-radius: 20px;
         background-image: url(/images/me.png);
         background-size: cover;
+        background-position: center;
         margin-bottom: 20px;
-        box-shadow: 2px 2px 2px;
     }
 
     .socials {
-        background-color: $color-lightTheme;
         height: 15%;
         border-radius: 20px;
         display: flex;
         justify-content: space-around;
-        box-shadow: 2px 2px 2px;
 
         .linksWrapper {
             display: flex;
+
+            
+
             a {
                 display: flex;
-                img {
-                    margin: 15px;
+
+            
+            }
+            
+            img {
+                margin: 15px;
+                transition: all 1s;
+
+                &:hover {
+                    scale: 1.1;
                 }
             }
         }
