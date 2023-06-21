@@ -4,11 +4,11 @@
     background-color: #2c2c34;
     border-radius: 20px;
     height: 80px;
-    position: relative;
     color: $color-light;
     margin: auto 10px;
     display: flex;
-
+    
+    
 }
 
 .titleBox {
@@ -33,9 +33,11 @@
         li {
             display: inline;
             margin: auto 15px;
+
             .link {
                 color: $color-light;
                 text-decoration: none;
+                cursor: pointer;
             }
         }
 

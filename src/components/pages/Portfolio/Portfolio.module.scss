@@ -2,7 +2,12 @@
 
 .portfolioWrapper {
     margin: 100px 0;
-    height: 800px;
-    background-color: bisque;
+    min-height: 500px;
     padding: 50px;
+    border-radius: 20px;
+    transition: background-color 1s;
+
+    &:hover {
+        background-color: $color-light;
+    }
 }

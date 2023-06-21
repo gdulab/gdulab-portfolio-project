@@ -12,6 +12,11 @@
     flex: calc(66.666% - 20px);
     position: relative;
     max-height: 100%;
+    transition: background-color 1s;
+
+    &:hover {
+        background-color: $color-light;
+    }
 
     .heroLeftContentWrapper {
         position: absolute;
@@ -20,6 +25,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        
 
         .heroText {
             p {
@@ -44,12 +50,6 @@
                 max-height: 80%;
                 max-width: 15%;
                 margin: 10px;
-                transition: all 1s;
-
-
-                &:hover {
-                    transform: scale(1.1);
-                }
             }
 
         }
@@ -82,6 +82,11 @@
         border-radius: 20px;
         display: flex;
         justify-content: space-around;
+        transition: all 1s;
+
+        &:hover {
+            background-color: $color-light;
+        }
 
         .linksWrapper {
             display: flex;
@@ -95,6 +100,7 @@
             }
             
             img {
+                cursor: pointer;
                 margin: 15px;
                 transition: all 1s;
 

@@ -1,0 +1,35 @@
+@import '../../../styles/global.scss';
+
+.aboutMeWrapper {
+    min-height: 500px;
+    margin: 100px 0;
+    padding: 50px;
+    border-radius: 20px;
+    transition: background-color 1s;
+
+    &:hover {
+        background-color: $color-light;
+    }
+}
+
+.linksWrapper {
+    display: flex;
+    justify-content: flex-end;
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        .link {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            span {
+                margin: 0 15px;
+            }
+        }
+        img {
+            height: 40px;
+        }
+    }
+
+}
