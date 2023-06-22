@@ -4,6 +4,7 @@ import './styles/global.scss';
 import Home from "./components/pages/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
+import GoToTop from "./components/common/GoToTop/GoToTop";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/portfolio" element={<Portfolio />} />
                 </Routes>
             </Container>
+            <GoToTop />
         </main>
     );
 }

@@ -1,0 +1,66 @@
+@import '../../../styles/global.scss';
+
+.portfolioProjectWrapper {
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 1s;
+
+    &:hover {
+        background-color: white;
+    }
+
+    .portfolioProjectInnerWrapper {
+        min-height: 150px;
+        display: flex;
+        text-align: justify;
+
+        .projectDescription {
+            flex: 60%;
+            margin: auto 10px;
+
+            span {
+                font-weight: bold;
+            }
+
+            .createdInfo {
+                font-size: 12px;
+            }
+        }
+
+        .projectDetails {
+            flex: 30%;
+
+            .projectImage {
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .projectLinks {
+                display: flex;
+                justify-content: space-evenly;
+
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    margin: 5px;
+                    font-size: 15px;
+                    background-color: $color-lightTheme;
+                    padding: 10px;
+                    border-radius: 20px;
+                    transition: scale 1s;
+                    color: black;
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+    }
+}

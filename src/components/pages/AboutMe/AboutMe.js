@@ -10,7 +10,7 @@ const AboutMe = () => {
     return (
         <motion.div className={styles.aboutMeWrapper}
             id="aboutMe"
-            initial={{ opacity: 0, x: 500 }}
+            initial={{ opacity: 0, x: 300 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.2 }}>
             <h2>About me</h2>
