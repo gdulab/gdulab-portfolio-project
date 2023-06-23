@@ -35,3 +35,9 @@
         }
     }
 }
+
+@media (max-width: 772px) {
+    .contactContentWrapper {
+        flex-direction: column;
+    }
+}

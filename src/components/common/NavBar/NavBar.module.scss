@@ -7,8 +7,7 @@
     color: $color-light;
     margin: auto 10px;
     display: flex;
-    
-    
+
 }
 
 .titleBox {
@@ -21,7 +20,7 @@
     }
 }
 
-.links {
+.desktopNav {
     text-align: right;
     flex: 50%;
     margin: auto 30px;
@@ -31,7 +30,7 @@
         margin: auto;
 
         li {
-            display: inline;
+            display: inline-flex;
             margin: auto 15px;
 
             .link {
@@ -43,4 +42,29 @@
 
     }
 
+}
+
+.menuButton {
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 40px;
+    margin: auto 10px; 
+
+}
+
+
+@media (max-width: 772px) {
+    .menuButton {
+        display: none;
+    }
+    .NavBar {
+        display: flex;
+        max-width: 80vw;
+    }
+
+    .desktopNav {
+        display: none;
+
+    }
 }

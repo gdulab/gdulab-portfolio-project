@@ -64,3 +64,9 @@
         }
     }
 }
+
+@media (max-width: 772px) {
+    .portfolioProjectInnerWrapper {
+        flex-direction: column;
+    }
+}

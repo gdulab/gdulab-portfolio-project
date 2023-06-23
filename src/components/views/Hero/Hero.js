@@ -41,19 +41,25 @@ const Hero = () => {
                 <motion.div className={styles.photo}
                     initial={{ opacity: 0, y: -500 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'tween', duration: 0.5, delay: 0.2 }}>
+                    transition={{ type: 'tween', duration: 0.5, delay: 0.4 }}>
                 </motion.div>
                 <motion.div className={styles.socials}
                     initial={{ opacity: 0, x: 500 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ type: 'tween', duration: 0.5, delay: 0.3 }}>
                     <div className={styles.linksWrapper}>
-                        <img src={emailicon} alt='Email icon' onClick={() => {
-                            navigator.clipboard.writeText('gdula.bartlomiej@gmail.com');
-                            alert('E-mail adress copied to your clipboard.')
+                        <div className={styles.socialLink}>
+                            <img src={emailicon} alt='Email icon' onClick={() => {
+                                navigator.clipboard.writeText('gdula.bartlomiej@gmail.com');
+                                alert('E-mail adress copied to your clipboard.')
                             }}></img>
-                        <a href='https://www.linkedin.com/in/bart%C5%82omiej-gdula/' target='_blank' rel='noreferrer'><img src={linkedinicon} alt='linkedin icon'></img></a>
-                        <a href='https://github.com/gdulab' target='_blank' rel='noreferrer'><img src={githubicon} alt='github icon'></img></a>
+                        </div>
+                        <div className={styles.socialLink}>
+                            <a href='https://www.linkedin.com/in/bart%C5%82omiej-gdula/' target='_blank' rel='noreferrer'><img src={linkedinicon} alt='linkedin icon'></img></a>
+                        </div>
+                        <div className={styles.socialLink}>
+                            <a href='https://github.com/gdulab' target='_blank' rel='noreferrer'><img src={githubicon} alt='github icon'></img></a>
+                        </div>
                     </div>
                 </motion.div>
             </div>

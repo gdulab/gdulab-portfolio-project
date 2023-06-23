@@ -7,11 +7,12 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    width: 100vw;
+    width: 80vw;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .mainContainer {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }

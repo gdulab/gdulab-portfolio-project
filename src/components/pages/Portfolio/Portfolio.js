@@ -14,16 +14,23 @@ const Portfolio = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.8 }}>
             <h2>Portfolio</h2>
+
             {
-                projects.map(project => <PortfolioProject
+                projects.map(project => <motion.div
                     key={project.id}
-                    title={project.title}
-                    description={project.description}
-                    created={project.created}
-                    image={project.image} 
-                    link={project.link} 
-                    github={project.github} 
-                    tech={project.tech}/>
+                    id='portfolio'
+                    initial={{ opacity: 0, x: -300 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: "tween", duration: 0.5, delay: 0.3 }}>
+                    <PortfolioProject  
+                        title={project.title}
+                        description={project.description}
+                        created={project.created}
+                        image={project.image}
+                        link={project.link}
+                        github={project.github}
+                        tech={project.tech} />
+                </motion.div>
                 )
             }
         </motion.div>
