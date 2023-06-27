@@ -6,6 +6,8 @@
     border-radius: 20px;
     margin: 100px 0;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
         background-color: $color-light;
@@ -37,6 +39,9 @@
 }
 
 @media (max-width: 772px) {
+    .contactWrapper {
+        padding: 0;
+    }
     .contactContentWrapper {
         flex-direction: column;
     }
